@@ -1,3 +1,51 @@
-.body{
-    background-color: blue;
+:root{
+    font-size: 14px;
+    --numberOfcolumns: 6;
+    --numberOfrows: 8;
+    /* table_width deberia ser el ancho de las celdas multiplicado
+    por la cantidad de celdas*/
+    --table_width: 1080px;
+    /* table_height deberia ser la altura de las celdas multiplicada
+    por la cantidad de celdas*/
+    --table_height: 240px;
+    --table_line_color: rgb(140,140,140);
+    --table_color1: rgb(255,255,255);
+    --table_color2: rgb(245,245,245);
+}
+
+.tableColor1{
+    background-color: var(--table_color1);
+}
+
+.tableColor2{
+    background-color: var(--table_color2);
+}
+
+.table-item{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+}
+
+.table{
+    padding: 1px;
+    display: grid;
+    width: var(--table_width);
+    height: var(--table_height);
+    grid-template-columns: repeat(var(--numberOfcolumns), 1fr);
+    grid-template-rows: repeat(var(--numberOfrows), 1fr);
+    background-color: var(--table_line_color);
+    grid-gap: 1px 1px;
+    
+}
+
+.table-container{
+    width: 80vw;
+    height: 50vh;
+    overflow: auto;
+}
+
+body{
+    margin: 60px 40px 10px 40px;
+    
 }

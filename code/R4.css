@@ -1,0 +1,42 @@
+:root{
+    font-size: 14px;
+    /*
+    --numberOfcolumns: 6;
+    --numberOfrows: 6;
+    */
+    --table_line_color: rgb(140,140,140);
+    --table_color1: rgb(255,255,255);
+    --table_color2: rgb(231, 230, 230);
+}
+
+.tableColor1{
+    background-color: var(--table_color1);
+}
+
+.tableColor2{
+    background-color: var(--table_color2);
+}
+
+.table-item{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+}
+
+.table{
+    padding: 1px;
+    display: grid;
+    background-color: var(--table_line_color);
+    grid-gap: 1px 1px;
+    
+}
+
+#table-container{
+    width: 90vw;
+    overflow: auto;
+}
+
+body{
+    margin: 60px 40px 10px 40px;
+    
+}

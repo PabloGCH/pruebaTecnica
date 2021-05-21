@@ -1,0 +1,60 @@
+:root{
+    color: rgb(60,60,60);
+}
+
+
+
+
+h1{
+    color: black;
+}
+
+.linea{
+    height: 1px;
+    margin-left: 20px;
+    width: 90vw;
+    background-color: black;
+}
+
+
+#play-button{
+    position: absolute;
+    align-self: center;
+    width: 20%;
+    height: 20%;
+    z-index: 3;
+}
+
+#video-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 400px;
+    margin-left: 20px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#presentation-video{
+    z-index: 2;
+}
+
+
+#title-box{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px 0 20px;
+    width: 50%;
+}
+
+#introduction-box{
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+
+body{
+    margin-top: 60px;
+}

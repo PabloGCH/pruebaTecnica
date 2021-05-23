@@ -28,7 +28,7 @@ function writeFirstRow(){
 function setTableSize(){
   var rows = NUMBER_OF_TABLE_ROWS + 1;
   var table = document.getElementById("weatherTable");
-  table.style.gridTemplateColumns = `repeat(${NUMBER_OF_TABLE_COLUMNS}), 1fr`;
+  table.style.gridTemplateColumns = `repeat(${NUMBER_OF_TABLE_COLUMNS}, 1fr)`;
   table.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
   var size_width = NUMBER_OF_TABLE_COLUMNS * CELL_WIDTH;
   table.style.width = size_width.toString() + "px";

@@ -10,5 +10,7 @@ abrir la terminal (Aclaracion, lo hice usando linux ubuntu) y introducir el sigu
 
 Nota:
 
-A veces al solicitar datos del Rest API da error (No se porque), pero si se espera
+- A veces al solicitar datos del Rest API da error (No se porque), pero si se espera
 un par de segundos y se vuelve a cargar la pagina suele funcionar.
+
+- Es necesario ubicar la libreria de jquery en el directorio pruebaTecnica/ para que el codigo funcione
